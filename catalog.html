@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс - Катлог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<header class="main-header">
+  <div class="main-header__logo"><a href="index.html">Device</a></div>
+  <nav class="main-menu">
+    <div class="search-form">
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <label class="visually-hidden" for="search">Поиск по сайту</label>
+        <input class="search-form__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
+        <button class="search-form__button" type="submit">Искать</button>
+      </form>
+    </div>
+    <ul class="user-nav">
+      <li>
+        <a class="user-nav__link user-nav__link--login" href="#">Валентин Петухов</a>
+      </li>
+      <li>
+        <a class="user-nav__link user-nav__link--logout" href="#">Выйти</a>
+      </li>
+    </ul>
+    <div>
+      <a class="compare-link" href="#">Сравнить</a>
+      <a class="cart-link" href="#">Корзина</a>
+    </div>
+    <ul class="site-nav">
+      <li class="site-nav__item catalog-menu">
+        <a class="site-nav__link" href="#">Каталог товаров</a>
+        <ul class="catalog-menu__dropdown">
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="#">Умные часы</a>
+          </li>
+          <li class="catalog-menu__item">
+            <a class="catalog-menu__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">Доставка</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">Гарантия</a>
+      </li>
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="page-title">Моноподы для селфи</h1>
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs__item">
+      <a href="index.html" class="breadcrumbs__link">Главная </a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">Каталог товаров</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <span class="breadcrumbs__link breadcrumbs__link--current">Моноподы для селфи</span>
+    </li>
+  </ul>
+
+  <section class="filter">
+    <h2 class="filter-title">Фильтр:</h2>
+    <!--filter-->
+  </section>
+
+  <section class="catalog">
+    <h2 class="visually-hidden">Список моноподов для селфи</h2>
+    <ul class="catalog__list">
+      <li class="catalog__item item">
+        <article>
+          <div class="item__info">
+            <h3>
+              <a class="item__title" href="#">Любительская селфи-палка</a>
+            </h3>
+            <span class="item__price">500 руб.</span>
+          </div>
+          <div class="item__image">
+            <img src="http://placehold.it/360x380" alt="Любительская селфи-палка" width="360" height="380">
+            <div class="item__hover">
+              <a class="item__add-to-cart" href="#">В корзину</a>
+              <a class="item__add-to-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item item">
+        <article>
+          <div class="item__info">
+            <h3>
+              <a class="item__title" href="#">Профессиональная селфи-палка </a>
+            </h3>
+            <span class="item__price">1 500 руб.</span>
+          </div>
+          <div class="item__image">
+            <img src="http://placehold.it/360x380" alt="Профессиональная селфи-палка " width="360" height="380">
+            <div class="item__hover">
+              <a class="item__add-to-cart" href="#">В корзину</a>
+              <a class="item__add-to-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item item">
+        <article>
+          <div class="item__info">
+            <h3>
+              <a class="item__title" href="#">Непотопляемая селфи-палка</a>
+            </h3>
+            <span class="item__price">2 500 руб.</span>
+          </div>
+          <div class="item__image">
+            <img src="http://placehold.it/360x380" alt="Непотопляемая селфи-палка" width="360" height="380">
+            <div class="item__hover">
+              <a class="item__add-to-cart" href="#">В корзину</a>
+              <a class="item__add-to-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item item">
+        <article>
+          <div class="item__info">
+            <h3>
+              <a class="item__title" href="#">Селфи-палка «Следуй за мной»</a>
+            </h3>
+            <span class="item__price">4 900 руб.</span>
+          </div>
+          <div class="item__image">
+            <img src="http://placehold.it/360x380" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+            <div class="item__hover">
+              <a class="item__add-to-cart" href="#">В корзину</a>
+              <a class="item__add-to-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a class="pagination__link pagination__link--back" href="#">Назад</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link pagination__link--current">1</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">2</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link pagination__link--forward" href="#">Вперед</a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <div class="main-footer__row">
+    <div class="main-footer__logo"><a href="index.html">Device</a></div>
+    <ul class="user-nav">
+      <li>
+        <a class="user-nav__link user-nav__link--login" href="#">Валентин Петухов</a>
+      </li>
+      <li>
+        <a class="user-nav__link user-nav__link--logout" href="#">Выйти</a>
+      </li>
+    </ul>
+    <div>
+      <a class="compare-link" href="#">Сравнить</a>
+      <a class="cart-link" href="#">Корзина</a>
+    </div>
+  </div>
+  <div class="main-footer__row">
+    <p class="main_footer__address">г. Москва, ул. Строителей, 15</p>
+    <ul class="footer-nav">
+      <li class="footer-nav__item">
+        <a class="footer-nav__link" href="#">Доставка</a>
+      </li>
+      <li class="footer-nav__item">
+        <a class="footer-nav__link" href="#">Гарантия</a>
+      </li>
+      <li class="footer-nav__item">
+        <a class="footer-nav__link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <p class="main_footer__phone">Тел.: +7 (495) 495-95-95</p></div>
+  <div class="main-footer__row">
+    <ul class="socials">
+      <li class="socials__item">
+        <a href="https://www.facebook.com/htmlacademy" class="socials__link socials__fb">Facebook</a>
+      </li>
+      <li class="socials__item">
+        <a href="https://www.instagram.com/htmlacademy/" class="socials__link socials__ig">Instagram</a>
+      </li>
+      <li class="socials__item">
+        <a href="https://twitter.com/htmlacademy_ru" class="socials__link socials__twitter">Twitter</a>
+      </li>
+    </ul>
+    <div class="logo-academy">
+      <img class="logo-academy__image" src="img/logo-html.svg" alt="Логотип HtmlAcademy">
+    </div>
+  </div>
+</footer>
+</body>
+</html>
