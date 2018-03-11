@@ -80,12 +80,104 @@
   </ul>
 
   <section class="filter">
-    <h2 class="filter-title">Фильтр:</h2>
-    <!--filter-->
+    <h2 class="filter__title">Фильтр:</h2>
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <div class="filter__block-items">
+        <b class="filter__name">Стоимость</b>
+        <div class="filter-range">
+          <div class="filter-range__slider"></div>
+          <div class="filter-range__thumb-min"></div>
+          <div class="filter-range__thumb-max"></div>
+        </div>
+        <input id="min-price" type="hidden" value="0" name="min-price">
+        <input id="max-price" type="hidden" value="5000" name="max-price">
+      </div>
+
+      <div class="filter__block-items">
+        <b class="filter__name">Цвет</b>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <label>
+              <input class="filter__checkbox" type="checkbox" name="color[]" value="black" checked>
+              Черный
+            </label>
+          </li>
+          <li class="filter__item">
+            <label>
+              <input class="filter__checkbox" type="checkbox" name="color[]" value="white">
+              Белый
+            </label>
+          </li>
+          <li class="filter__item">
+            <label>
+              <input class="filter__checkbox" type="checkbox" name="color[]" value="blue" checked>
+              Синий
+            </label>
+          </li>
+          <li class="filter__item">
+            <label>
+              <input class="filter_checkbox" type="checkbox" name="color[]" value="red" checked>
+              Красный
+            </label>
+          </li>
+          <li class="filter__item">
+            <label>
+              <input class="filter__checkbox" type="checkbox" name="color[]" value="pink">
+              Розовый
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="filter__block-items">
+        <b class="filter__name">Bluetooth</b>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <label>
+              <input class="filter__radio" type="radio" name="bluetooth" value="there-is" checked>
+              Есть
+            </label>
+          </li>
+          <li class="filter__item">
+            <label>
+              <input class="filter__radio" type="radio" name="bluetooth" value="no">
+              Нет
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <button type="submit">Показать</button>
+    </form>
   </section>
 
   <section class="catalog">
     <h2 class="visually-hidden">Список моноподов для селфи</h2>
+
+    <div class="filter-sort">
+      <span class="filter-sort__title">Сортировка:</span>
+
+      <ul class="filter-sort__list">
+        <li class="filter-sort__item">
+          <a class="filter-sort__link filter-sort__link--active" href="?sortby=price">По цене</a>
+        </li>
+        <li class="filter-sort__item">
+          <a class="filter-sort__link" href="?sortby=type">По типу</a>
+        </li>
+        <li class="filter-sort__item">
+          <a class="filter-sort__link" href="?sortby=popular">По популярности</a>
+        </li>
+        <li class="filter-sort__item">
+          <a class="filter-sort__link filter-sort__link-desc" href="?orderby=desc">Сортировать по убыванию</a>
+        </li>
+        <li class="filter-sort__item">
+          <a class="filter-sort__link filter-sort__link-asc filter-sort__link--active" href="?orderby=asc">Сортировать
+            по возрастанию</a>
+
+        </li>
+      </ul>
+    </div>
+
     <ul class="catalog__list">
       <li class="catalog__item item">
         <div class="item__info">
@@ -210,7 +302,7 @@
     </p>
     <div class="logo-academy">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="logo-academy__image" src="img/logo-html.svg" alt="Логотип HtmlAcademy">
+        <img class="logo-academy__image" src="img/svg/logo-html.svg" alt="Логотип HtmlAcademy">
       </a>
     </div>
   </div>
