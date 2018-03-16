@@ -5,18 +5,21 @@
   <title>HTML Academy: Девайс - Катлог</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inner-page">
 <header class="main-header">
-  <div class="main-header__logo"><a href="index.html">Device</a></div>
   <nav class="main-menu">
+    <div class="main-header__logo"><a href="index.html">Device</a></div>
+
     <div class="search-form">
       <form action="https://echo.htmlacademy.ru/" method="get">
         <label class="visually-hidden" for="search">Поиск по сайту</label>
         <input class="search-form__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
-        <button class="search-form__button" type="submit">Искать</button>
+        <button class="search-form__submit" type="submit"><span>Искать</span></button>
       </form>
     </div>
+
     <ul class="user-nav">
       <li>
         <a class="user-nav__link user-nav__link--login" href="#">Валентин Петухов</a>
@@ -24,14 +27,18 @@
       <li>
         <a class="user-nav__link user-nav__link--logout" href="#">Выйти</a>
       </li>
+      <li>
+        <a class="user-nav__link user-nav__link--compare" href="#">Сравнить</a>
+      </li>
+      <li>
+        <a class="user-nav__link user-nav__link--cart" href="#">Корзина</a>
+      </li>
     </ul>
-    <div>
-      <a class="compare-link" href="#">Сравнить</a>
-      <a class="cart-link" href="#">Корзина</a>
-    </div>
+
     <ul class="site-nav">
       <li class="site-nav__item catalog-menu">
         <a class="site-nav__link" href="#">Каталог товаров</a>
+
         <ul class="catalog-menu__dropdown">
           <li class="catalog-menu__item">
             <a class="catalog-menu__link" href="#">Виртуальная реальность</a>
@@ -52,6 +59,7 @@
             <a class="catalog-menu__link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
+
       </li>
       <li class="site-nav__item">
         <a class="site-nav__link" href="#">Доставка</a>
@@ -70,10 +78,10 @@
   <h1 class="page-title">Моноподы для селфи</h1>
   <ul class="breadcrumbs">
     <li class="breadcrumbs__item">
-      <a href="index.html" class="breadcrumbs__link">Главная </a>
+      <a class="breadcrumbs__link" href="index.html">Главная </a>
     </li>
     <li class="breadcrumbs__item">
-      <a href="#" class="breadcrumbs__link">Каталог товаров</a>
+      <a class="breadcrumbs__link" href="#">Каталог товаров</a>
     </li>
     <li class="breadcrumbs__item">
       <span class="breadcrumbs__link breadcrumbs__link--current">Моноподы для селфи</span>
@@ -81,10 +89,13 @@
   </ul>
 
   <section class="filter">
-    <h2 class="filter__title">Фильтр:</h2>
+    <div class="filter__title-wrapper">
+      <h2 class="filter__title">Фильтр:</h2>
+    </div>
+
     <form action="https://echo.htmlacademy.ru/" method="get">
-      <div class="filter__block-items">
-        <b class="filter__name">Стоимость</b>
+      <fieldset class="filter__block-items">
+        <legend class="filter__name">Стоимость</legend>
         <div class="filter-range">
           <div class="filter-range__slider"></div>
           <div class="filter-range__thumb-min"></div>
@@ -92,7 +103,7 @@
         </div>
         <input id="min-price" type="hidden" value="0" name="min-price">
         <input id="max-price" type="hidden" value="5000" name="max-price">
-      </div>
+      </fieldset>
 
       <fieldset class="filter__block-items">
         <legend class="filter__name">Цвет</legend>
@@ -148,7 +159,7 @@
         </ul>
       </fieldset>
 
-      <button type="submit">Показать</button>
+      <button class="btn" type="submit">Показать</button>
     </form>
   </section>
 
@@ -190,7 +201,7 @@
         <div class="item__image">
           <img src="img/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
           <div class="item__hover">
-            <button class="item__add-to-cart">В корзину</button>
+            <button class="item__add-to-cart btn">В корзину</button>
             <button class="item__add-to-compare">Добавить к сравнению</button>
           </div>
         </div>
@@ -206,7 +217,7 @@
         <div class="item__image">
           <img src="img/product-2.jpg" alt="Профессиональная селфи-палка " width="360" height="380">
           <div class="item__hover">
-            <button class="item__add-to-cart">В корзину</button>
+            <button class="item__add-to-cart btn">В корзину</button>
             <button class="item__add-to-compare">Добавить к сравнению</button>
           </div>
         </div>
@@ -222,7 +233,7 @@
         <div class="item__image">
           <img src="img/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
           <div class="item__hover">
-            <button class="item__add-to-cart">В корзину</button>
+            <button class="item__add-to-cart btn">В корзину</button>
             <button class="item__add-to-compare">Добавить к сравнению</button>
           </div>
         </div>
@@ -238,7 +249,7 @@
         <div class="item__image">
           <img src="img/product-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
           <div class="item__hover">
-            <button class="item__add-to-cart">В корзину</button>
+            <button class="item__add-to-cart btn">В корзину</button>
             <button class="item__add-to-compare">Добавить к сравнению</button>
           </div>
         </div>
@@ -246,8 +257,8 @@
     </ul>
 
     <ul class="pagination__list">
-      <li class="pagination__item">
-        <a class="pagination__link pagination__link--backward" href="#">Назад</a>
+      <li class="pagination__item pagination__link--move">
+        <a class="pagination__link" href="#">Назад</a>
       </li>
       <li class="pagination__item">
         <a class="pagination__link pagination__link--current">1</a>
@@ -258,30 +269,24 @@
       <li class="pagination__item">
         <a class="pagination__link" href="#">3</a>
       </li>
-      <li class="pagination__item">
-        <a class="pagination__link pagination__link--forward" href="#">Вперед</a>
+      <li class="pagination__item pagination__link--move">
+        <a class="pagination__link" href="#">Вперед</a>
       </li>
     </ul>
   </section>
 </main>
 
 <footer class="main-footer">
-  <div class="main-footer__row">
+  <div class="main-footer__top">
     <div class="main-footer__logo"><a href="index.html">Device</a></div>
-    <ul class="user-nav">
-      <li>
-        <a class="user-nav__link user-nav__link--login" href="#">Валентин Петухов</a>
-      </li>
-      <li>
-        <a class="user-nav__link user-nav__link--logout" href="#">Выйти</a>
-      </li>
+    <ul class="footer-user-nav">
+      <li><a class="footer-user-nav__link footer-user-nav__link--login" href="#">Валентин Петухов</a></li>
+      <li><a class="footer-user-nav__link footer-user-nav__link--logout" href="#">Выйти</a></li>
+      <li><a class="footer-user-nav__link footer-user-nav__link--compare" href="#">Сравнить</a></li>
+      <li><a class="footer-user-nav__link footer-user-nav__link--cart" href="#">Корзина</a></li>
     </ul>
-    <div>
-      <a class="compare-link" href="#">Сравнить</a>
-      <a class="cart-link" href="#">Корзина</a>
-    </div>
   </div>
-  <div class="main-footer__row">
+  <div class="main-footer__middle">
     <p class="main_footer__address">г. Москва, ул. Строителей, 15</p>
     <ul class="footer-nav">
       <li class="footer-nav__item">
@@ -295,7 +300,7 @@
       </li>
     </ul>
     <p class="main_footer__phone">Тел.: +7 (495) 495-95-95</p></div>
-  <div class="main-footer__row">
+  <div class="main-footer__bottom">
     <p class="socials">
       <a class="socials__link socials__fb" href="https://www.facebook.com/htmlacademy">Facebook</a>
       <a class="socials__link socials__ig" href="https://www.instagram.com/htmlacademy/">Instagram</a>

@@ -5,25 +5,26 @@
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
-  <div class="main-header__logo"><a>Device</a></div>
   <nav class="main-menu">
+    <div class="main-header__logo"><a>Device</a></div>
+
     <div class="search-form">
       <form action="https://echo.htmlacademy.ru/" method="get">
         <label class="visually-hidden" for="search">Поиск по сайту</label>
         <input class="search-form__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
-        <button class="search-form__button" type="submit">Искать</button>
+        <button class="search-form__submit" type="submit"><span>Искать</span></button>
       </form>
     </div>
+
     <ul class="user-nav">
       <li><a class="user-nav__link  user-nav__link--enter" href="#">Войти</a></li>
+      <li><a class="user-nav__link  user-nav__link--compare" href="#">Сравнить</a></li>
+      <li><a class="user-nav__link  user-nav__link--cart" href="#">Корзина</a></li>
     </ul>
-    <div>
-      <a class="compare-link" href="#">Сравнить</a>
-      <a class="cart-link" href="#">Корзина</a>
-    </div>
     <ul class="site-nav">
       <li class="site-nav__item catalog-menu">
         <a class="site-nav__link" href="#">Каталог товаров</a>
@@ -74,7 +75,7 @@
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
           <p>
-            <a class="main-slider__link" href="#">Подробнее</a>
+            <a class="main-slider__link btn" href="#">Подробнее</a>
           </p>
         </div>
         <table class="main-slider__parameters table-parameters">
@@ -231,17 +232,17 @@
     <ul class="logotypes__list">
       <li class="logotypes__item">
         <a href="#">
-          <img class="logotypes__image" src="img/logo-1.jpg" alt="Логотип компании Dji" width="260" height="100">
+          <img class="logotypes__image" src="img/logo-1-hover.jpg" alt="Логотип компании Dji" width="260" height="100">
         </a>
       </li>
       <li class="logotypes__item">
         <a href="#">
-          <img class="logotypes__image" src="img/logo-2.jpg" alt="Логотип компании SP Gadgets" width="260" height="100">
+          <img class="logotypes__image" src="img/logo-2-hover.jpg" alt="Логотип компании SP Gadgets" width="260" height="100">
         </a>
       </li>
       <li class="logotypes__item">
         <a href="#">
-          <img class="logotypes__image" src="img/logo-3.jpg" alt="Логотип компании Gopro" width="260" height="100">
+          <img class="logotypes__image" src="img/logo-3-hover.jpg" alt="Логотип компании Gopro" width="260" height="100">
         </a>
       </li>
       <li class="logotypes__item">
@@ -262,7 +263,7 @@
       <li class="about-us__item">Автотрейдинг</li>
       <li class="about-us__item">ЖелДорЭкспедиция</li>
     </ul>
-    <a class="about-us__link" href="#">Подробнее о нас</a>
+    <a class="about-us__link btn" href="#">Подробнее о нас</a>
   </section>
   <section class="contact">
     <h2 class="contact__header">Контакты</h2>
@@ -272,21 +273,19 @@
     <div class="contact__map">
       <img src="img/map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
     </div>
-    <button class="contact__feedback-btn">Напишите нам</button>
+    <button class="contact__feedback-btn btn">Напишите нам</button>
   </section>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__row">
+  <div class="main-footer__top">
     <div class="main-footer__logo"><a>Device</a></div>
-    <ul class="user-nav">
-      <li><a class="user-nav__link user-nav__link--enter" href="#">Войти</a></li>
+    <ul class="footer-user-nav">
+      <li><a class="footer-user-nav__link footer-user-nav__link--enter" href="#">Войти</a></li>
+      <li><a class="footer-user-nav__link footer-user-nav__link--compare" href="#">Сравнить</a></li>
+      <li><a class="footer-user-nav__link footer-user-nav__link--cart" href="#">Корзина</a></li>
     </ul>
-    <div>
-      <a class="compare-link" href="#">Сравнить</a>
-      <a class="cart-link" href="#">Корзина</a>
-    </div>
   </div>
-  <div class="main-footer__row">
+  <div class="main-footer__middle">
     <p class="main_footer__address">г. Москва, ул. Строителей, 15</p>
     <ul class="footer-nav">
       <li class="footer-nav__item">
@@ -300,7 +299,7 @@
       </li>
     </ul>
     <p class="main_footer__phone">Тел.: +7 (495) 495-95-95</p></div>
-  <div class="main-footer__row">
+  <div class="main-footer__bottom">
     <p class="socials">
       <a class="socials__link socials__fb" href="https://www.facebook.com/htmlacademy">Facebook</a>
       <a class="socials__link socials__ig" href="https://www.instagram.com/htmlacademy/">Instagram</a>
@@ -329,7 +328,7 @@
       <label class="model-feedback__label" for="feedback-text">Текст письма:</label>
       <textarea class="model-feedback__input" id="feedback-text" name="text" placeholder="В свободной форме"></textarea>
     </p>
-    <button type="submit">Отпраить</button>
+    <button class="btn" type="submit">Отпраить</button>
   </form>
 </section>
 <section class="modal-map">
