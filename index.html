@@ -8,23 +8,26 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header container">
   <nav class="main-menu">
     <div class="main-header__logo"><a>Device</a></div>
 
-    <div class="search-form">
-      <form action="https://echo.htmlacademy.ru/" method="get">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input class="search-form__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
-        <button class="search-form__submit" type="submit"><span>Искать</span></button>
-      </form>
+    <div class="main-menu__top-wrapper">
+      <div class="search-form">
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search-form__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="search-form__submit" type="submit"><span>Искать</span></button>
+        </form>
+      </div>
+
+      <ul class="user-nav">
+        <li><a class="user-nav__link  user-nav__link--enter" href="#">Войти</a></li>
+        <li><a class="user-nav__link  user-nav__link--compare" href="#">Сравнить</a></li>
+        <li><a class="user-nav__link  user-nav__link--cart" href="#">Корзина</a></li>
+      </ul>
     </div>
 
-    <ul class="user-nav">
-      <li><a class="user-nav__link  user-nav__link--enter" href="#">Войти</a></li>
-      <li><a class="user-nav__link  user-nav__link--compare" href="#">Сравнить</a></li>
-      <li><a class="user-nav__link  user-nav__link--cart" href="#">Корзина</a></li>
-    </ul>
     <ul class="site-nav">
       <li class="site-nav__item catalog-menu">
         <a class="site-nav__link" href="#">Каталог товаров</a>
@@ -66,8 +69,10 @@
     <h2 class="visually-hidden">Слайдер популярных товаров</h2>
     <ul class="main-slider__list">
       <li class="main-slider__item">
-        <img class="main-slider__image" src="img/slider-1.png" width="384" height="486"
-             alt="Делай селфи, как Бен Стиллер!">
+        <div class="main-slider__image">
+          <img src="img/slider-1.png" width="384" height="486" alt="Делай селфи, как Бен Стиллер!">
+        </div>
+
         <div class="main-slider__description">
           <p class="main-slider__slogan">Делай селфи, <br> как Бен Стиллер!</p>
           <p class="main-slider__info">
@@ -77,35 +82,39 @@
           <p>
             <a class="main-slider__link btn" href="#">Подробнее</a>
           </p>
+
+          <table class="main-slider__parameters table-parameters">
+            <tr>
+              <td>
+                <span class="table-parameters__value">8,5 м</span>
+              </td>
+              <td>
+                <span class="table-parameters__value">5 кг</span>
+              </td>
+              <td>
+                <span class="table-parameters__value">Карбон</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-parameters__name">Длина палки</span>
+              </td>
+              <td>
+                <span class="table-parameters__name">Вес палки</span>
+              </td>
+              <td>
+                <span class="table-parameters__name">Материал</span>
+              </td>
+            </tr>
+          </table>
         </div>
-        <table class="main-slider__parameters table-parameters">
-          <tr>
-            <td>
-              <span class="table-parameters__value">8,5 м</span>
-            </td>
-            <td>
-              <span class="table-parameters__value">5 кг</span>
-            </td>
-            <td>
-              <span class="table-parameters__value">Карбон</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="table-parameters__name">Длина палки</span>
-            </td>
-            <td>
-              <span class="table-parameters__name">Вес палки</span>
-            </td>
-            <td>
-              <span class="table-parameters__name">Материал</span>
-            </td>
-          </tr>
-        </table>
       </li>
+
       <li class="main-slider__item">
-        <img class="main-slider__image" src="img/slider-2.png" width="345" height="485"
-             alt="Худеем правильно!">
+        <div class="main-slider__image">
+          <img src="img/slider-2.png" width="345" height="485" alt="Худеем правильно!">
+        </div>
+
         <div class="main-slider__description">
           <p class="main-slider__slogan">Худеем <br> правильно!</p>
           <p class="main-slider__info">
@@ -115,23 +124,27 @@
           <p>
             <a class="main-slider__link" href="#">Подробнее</a>
           </p>
+
+          <table class="main-slider__parameters table-parameters">
+            <tr>
+              <td>
+                <span class="table-parameters__value">48 часов</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-parameters__name">Без подзарядки</span>
+              </td>
+            </tr>
+          </table>
         </div>
-        <table class="main-slider__parameters table-parameters">
-          <tr>
-            <td>
-              <span class="table-parameters__value">48 часов</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="table-parameters__name">Без подзарядки</span>
-            </td>
-          </tr>
-        </table>
       </li>
+
       <li class="main-slider__item">
-        <img class="main-slider__image" src="img/slider-3.png" width="526" height="334"
-             alt="Худеем правильно!">
+        <div class="main-slider__image">
+          <img src="img/slider-3.png" width="526" height="334" alt="Худеем правильно!">
+        </div>
+
         <div class="main-slider__description">
           <p class="main-slider__slogan">Порхает как бабочка, <br>
             жалит как пчела!</p>
@@ -142,25 +155,26 @@
           <p>
             <a class="main-slider__link" href="#">Подробнее</a>
           </p>
+
+          <table class="main-slider__parameters table-parameters">
+            <tr>
+              <td>
+                <span class="table-parameters__value">800 м</span>
+              </td>
+              <td>
+                <span class="table-parameters__value">50 м</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-parameters__name">Дальность полета</span>
+              </td>
+              <td>
+                <span class="table-parameters__name">Радиус поражения</span>
+              </td>
+            </tr>
+          </table>
         </div>
-        <table class="main-slider__parameters table-parameters">
-          <tr>
-            <td>
-              <span class="table-parameters__value">800 м</span>
-            </td>
-            <td>
-              <span class="table-parameters__value">50 м</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="table-parameters__name">Дальность полета</span>
-            </td>
-            <td>
-              <span class="table-parameters__name">Радиус поражения</span>
-            </td>
-          </tr>
-        </table>
       </li>
     </ul>
   </section>
@@ -237,12 +251,14 @@
       </li>
       <li class="logotypes__item">
         <a href="#">
-          <img class="logotypes__image" src="img/logo-2-hover.jpg" alt="Логотип компании SP Gadgets" width="260" height="100">
+          <img class="logotypes__image" src="img/logo-2-hover.jpg" alt="Логотип компании SP Gadgets" width="260"
+               height="100">
         </a>
       </li>
       <li class="logotypes__item">
         <a href="#">
-          <img class="logotypes__image" src="img/logo-3-hover.jpg" alt="Логотип компании Gopro" width="260" height="100">
+          <img class="logotypes__image" src="img/logo-3-hover.jpg" alt="Логотип компании Gopro" width="260"
+               height="100">
         </a>
       </li>
       <li class="logotypes__item">
@@ -252,32 +268,34 @@
       </li>
     </ul>
   </section>
-  <section class="about-us">
-    <h2 class="about-us__header">О нас</h2>
-    <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-    <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
-      транспортными
-      компаниями:</p>
-    <ul class="about-us__list">
-      <li class="about-us__item">Деловые Линии</li>
-      <li class="about-us__item">Автотрейдинг</li>
-      <li class="about-us__item">ЖелДорЭкспедиция</li>
-    </ul>
-    <a class="about-us__link btn" href="#">Подробнее о нас</a>
-  </section>
-  <section class="contact">
-    <h2 class="contact__header">Контакты</h2>
-    <p class="contact__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
-      работоспособность покупки. Всякое
-      бывает.</p>
-    <div class="contact__map">
-      <img src="img/map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
-    </div>
-    <button class="contact__feedback-btn btn">Напишите нам</button>
-  </section>
+  <div class="about-us-wrapper">
+    <section class="about-us">
+      <h2 class="about-us__header">О нас</h2>
+      <p class="about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+      <p class="about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+        транспортными
+        компаниями:</p>
+      <ul class="about-us__list">
+        <li class="about-us__item">Деловые Линии</li>
+        <li class="about-us__item">Автотрейдинг</li>
+        <li class="about-us__item">ЖелДорЭкспедиция</li>
+      </ul>
+      <a class="about-us__link btn" href="#">Подробнее о нас</a>
+    </section>
+    <section class="contact">
+      <h2 class="contact__header">Контакты</h2>
+      <p class="contact__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+        работоспособность покупки. Всякое
+        бывает.</p>
+      <div class="contact__map">
+        <img src="img/map.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
+      </div>
+      <button class="contact__feedback-btn btn">Напишите нам</button>
+    </section>
+  </div>
 </main>
 <footer class="main-footer">
-  <div class="main-footer__top">
+  <div class="main-footer__top container">
     <div class="main-footer__logo"><a>Device</a></div>
     <ul class="footer-user-nav">
       <li><a class="footer-user-nav__link footer-user-nav__link--enter" href="#">Войти</a></li>
@@ -285,7 +303,7 @@
       <li><a class="footer-user-nav__link footer-user-nav__link--cart" href="#">Корзина</a></li>
     </ul>
   </div>
-  <div class="main-footer__middle">
+  <div class="main-footer__middle container">
     <p class="main_footer__address">г. Москва, ул. Строителей, 15</p>
     <ul class="footer-nav">
       <li class="footer-nav__item">
@@ -299,7 +317,7 @@
       </li>
     </ul>
     <p class="main_footer__phone">Тел.: +7 (495) 495-95-95</p></div>
-  <div class="main-footer__bottom">
+  <div class="main-footer__bottom container">
     <p class="socials">
       <a class="socials__link socials__fb" href="https://www.facebook.com/htmlacademy">Facebook</a>
       <a class="socials__link socials__ig" href="https://www.instagram.com/htmlacademy/">Instagram</a>
@@ -332,9 +350,11 @@
   </form>
 </section>
 <section class="modal-map">
-  <h2 class="visually-hidden">Карта</h2>
-  <button class="modal-close">Закрыть</button>
-  <img src="img/map-big.jpg" alt="г. Москва, ул. Строителей, 15" width="960" height="559">
+  <div class="modal-map__wrapper">
+    <h2 class="visually-hidden">Карта</h2>
+    <button class="modal-close">Закрыть</button>
+    <img src="img/map-big.jpg" alt="г. Москва, ул. Строителей, 15" width="960" height="559">
+  </div>
 </section>
 </body>
 </html>
