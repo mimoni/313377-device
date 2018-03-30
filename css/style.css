@@ -81,6 +81,7 @@ input[type="radio"].visually-hidden {
   padding: 10px 42px;
 
   font: inherit;
+  vertical-align: middle;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -393,10 +394,12 @@ input[type="radio"].visually-hidden {
 
 .catalog-menu > svg {
   position: relative;
-  top: 2px;
+  top: -2px;
 
   display: inline-block;
-  margin-left: 8px;
+  margin-left: 6px;
+
+  vertical-align: middle;
 
   opacity: 0.3;
 }
@@ -411,7 +414,8 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   align-content: flex-start;
   min-width: 1160px;
-  max-height: 164px;
+  height: 164px;
+  min-height: 164px;
   margin: 0 -60px;
   padding-top: 20px;
   padding-right: 60px;
@@ -460,8 +464,9 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 
-  background: -o-linear-gradient(#f7e296, #f7e296 114px, #ffffff 114px);
-  background:    linear-gradient(#f7e296, #f7e296 114px, #ffffff 114px);
+  background:      -o-linear-gradient(#f7e296, #f7e296 114px, #ffffff 114px);
+  background: -webkit-linear-gradient(#f7e296, #f7e296 114px, #ffffff 114px);
+  background:         linear-gradient(#f7e296, #f7e296 114px, #ffffff 114px);
 }
 
 .main-slider__controls {
@@ -715,8 +720,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services__bg {
-  background-image: -o-linear-gradient(transparent, transparent 100px, #e5e5e5 100px);
-  background-image:    linear-gradient(transparent, transparent 100px, #e5e5e5 100px);
+  background-image:      -o-linear-gradient(transparent, transparent 100px, #e5e5e5 100px);
+  background-image: -webkit-linear-gradient(transparent, transparent 100px, #e5e5e5 100px);
+  background-image:         linear-gradient(transparent, transparent 100px, #e5e5e5 100px);
 }
 
 .services-menu__list,
@@ -1495,11 +1501,13 @@ textarea.modal-feedback__input {
 }
 
 .catalog-bg {
-  background-image: -o-linear-gradient(left, #dcdcdc 40%, #ebebeb 40%),
+  background-image:      -o-linear-gradient(left, #dcdcdc 40%, #ebebeb 40%),
   -o-linear-gradient(left, #eeeeee 40%, #ffffff 40%);
   background-image: -webkit-gradient(linear, left top, right top, color-stop(40%, #dcdcdc), color-stop(40%, #ebebeb)),
   -webkit-gradient(linear, left top, right top, color-stop(40%, #eeeeee), color-stop(40%, #ffffff));
-  background-image:    linear-gradient(90deg, #dcdcdc 40%, #ebebeb 40%),
+  background-image: -webkit-linear-gradient(left, #dcdcdc 40%, #ebebeb 40%),
+  -webkit-linear-gradient(left, #eeeeee 40%, #ffffff 40%);
+  background-image:         linear-gradient(90deg, #dcdcdc 40%, #ebebeb 40%),
   linear-gradient(90deg, #eeeeee 40%, #ffffff 40%);
   /*background-position: 40% 0;*/
   background-repeat: no-repeat;
@@ -1579,7 +1587,7 @@ textarea.modal-feedback__input {
 .filter__item label {
   position: relative;
 
-  padding-left: 40px;
+  padding-left: 38px;
 
   font-weight: 300;
   font-size: 14px;
@@ -1726,6 +1734,7 @@ textarea.modal-feedback__input {
 
 .filter button {
   margin-top: 31px;
+  margin-left: -4px;
 }
 
 .filter-range__scale {
@@ -1791,7 +1800,7 @@ textarea.modal-feedback__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 44%;
 
   font-weight: 300;
   font-size: 14px;
@@ -1803,10 +1812,11 @@ textarea.modal-feedback__input {
 .filter-range__min-price input,
 .filter-range__max-price input {
   display: inline-block;
-  width: 70px;
-  padding-left: 5px;
+  width: 50px;
+  padding-left: 3px;
 
   font: inherit;
+  vertical-align: middle;
   color: inherit;
 
   background-color: transparent;
@@ -1814,13 +1824,13 @@ textarea.modal-feedback__input {
 }
 
 .filter-range__toggle--min {
-  left: 0;
+  left: 4px;
 
   margin-left: -10px;
 }
 
 .filter-range__toggle--max {
-  right: 40%;
+  right: 42%;
 
   margin-right: -10px;
 }
