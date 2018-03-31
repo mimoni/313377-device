@@ -591,6 +591,11 @@ input[type="radio"].visually-hidden {
   margin-left: 2px;
 }
 
+.categories__item:nth-child(2) .categories__name {
+  display: block;
+  max-width: 120px;
+}
+
 .categories__item:nth-child(3) svg {
   margin-top: 3px;
   margin-left: 10px;
@@ -768,6 +773,7 @@ input[type="radio"].visually-hidden {
 
 .services-slider__info {
   margin: 0;
+  margin-bottom: 15px;
 
   font-weight: 300;
   font-size: 15px;
@@ -873,6 +879,10 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-family: "Open sans", Arial, sans-serif;
   letter-spacing: normal;
+}
+
+.about-us__text {
+  padding-right: 5px;
 }
 
 .about-us__text:last-of-type {
@@ -1673,6 +1683,10 @@ textarea.modal-feedback__input {
   width: 360px;
   margin-right: 40px;
   margin-bottom: 45px;
+}
+
+.catalog__item:nth-child(2) .item__title {
+  max-width: 235px;
 }
 
 .item__title {
