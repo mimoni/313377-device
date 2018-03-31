@@ -1441,7 +1441,12 @@ textarea.modal-feedback__input {
   background-position: left center;
 }
 
-.filter__checkbox:checked + label::before {
+.filter__checkbox:checked:active + label::before {
+  background-image: url("../img/svg/checkbox-off.svg");
+}
+
+.filter__checkbox:checked + label::before,
+.filter__checkbox:not(checked):active + label::before {
   background-image: url("../img/svg/checkbox-on.svg");
 }
 
@@ -1453,12 +1458,6 @@ textarea.modal-feedback__input {
 .filter__checkbox:active + label::before,
 .filter__radio:active + label::before {
   opacity: 1;
-}
-
-.filter__checkbox:disabled + label,
-.filter__radio:disabled + label {
-  cursor: not-allowed;
-  opacity: 0.25;
 }
 
 .filter__checkbox:disabled + label,
@@ -1486,6 +1485,11 @@ textarea.modal-feedback__input {
   background-position: left center;
 }
 
+.filter__radio:checked:active + label::before {
+  background-image: url("../img/svg/radio-off.svg");
+}
+
+.filter__radio:not(checked):active + label::before,
 .filter__radio:checked + label::before {
   background-image: url("../img/svg/radio-on.svg");
 }
