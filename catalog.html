@@ -42,26 +42,35 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
           <path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/>
         </svg>
-        <ul class="catalog-menu__dropdown">
-          <li class="catalog-menu__item">
-            <a class="catalog-menu__link" href="#">Виртуальная реальность</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="catalog-menu__link" href="catalog.html">Моноподы для селфи</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="catalog-menu__link" href="#">Экшн-камеры</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="catalog-menu__link" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="catalog-menu__link" href="#">Умные часы</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="catalog-menu__link" href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
+
+        <div class="catalog-menu__dropdown-wrapper">
+          <ul class="catalog-menu__dropdown">
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">Экшн-камеры</a>
+            </li>
+          </ul>
+
+          <ul class="catalog-menu__dropdown">
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">Умные часы</a>
+            </li>
+          </ul>
+
+          <ul class="catalog-menu__dropdown">
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="site-nav__item">
         <a class="site-nav__link" href="#">Доставка</a>
@@ -182,10 +191,9 @@
 
         <div class="filter-sort">
 
+          <span class="filter-sort__title">Сортировка:</span>
+
           <ul class="filter-sort__list">
-            <li class="filter-sort__item">
-              <span class="filter-sort__title">Сортировка:</span>
-            </li>
             <li class="filter-sort__item">
               <a class="filter-sort__link filter-sort__link--active" href="?sortby=price">По цене</a>
             </li>
@@ -195,6 +203,9 @@
             <li class="filter-sort__item">
               <a class="filter-sort__link" href="?sortby=popular">По популярности</a>
             </li>
+          </ul>
+
+          <ul class="filter-sort__list">
             <li class="filter-sort__item">
               <a class="filter-sort__link filter-sort__link-desc" href="?order_by=desc">
                 <span class="visually-hidden">Сортировать по убыванию</span>
